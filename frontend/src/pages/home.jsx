@@ -2,9 +2,21 @@ import React from "react";
 import MainLayout from "../components/layouts/main.layout";
 
 const Home = () => {
+  const styles = {
+    backgroundImage: "url('./assets/background/bg.jpeg')",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh",
+    width: "100%",
+  };
+
   return (
     <MainLayout>
-      <h1>Home</h1>
+      <div style={styles}></div>
     </MainLayout>
   );
 };
